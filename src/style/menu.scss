@@ -1,0 +1,96 @@
+@import "./Main.scss";
+
+.Menu{
+    width: 100%;
+    height: 70px;
+}
+.container_menu{
+    padding-top: 24px;
+    width: 838px;
+    height: 47px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+.logot{
+    display: flex;
+    align-items: center;
+}
+.logo_text{
+    font-family: Iskra;
+    font-size: 24px;
+    color: $font;
+}
+.menu_nav{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    margin-left: 349px;
+}
+//навигация
+button.nav{
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 16px;
+    border: none;
+    color: $button;
+    background-color: transparent;
+    cursor: pointer;
+    position: relative;
+}
+button.nav:nth-child(2){
+    margin-left: 10px;
+}
+button.nav:after{
+    content: '';
+    position: absolute;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background: $button;
+    left: 50%;
+    margin-top: 5px;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+button.nav:hover:after, button.nav:focus:after{
+    width: 100%;
+}
+//кнопка заказа
+.button_add_order{
+    margin-left: 53px;
+    padding: 0;
+    font-family: Inter;
+    font-weight: 400;
+    font-size: 15px;
+    color: $font;
+    cursor: pointer;
+    background-color: inherit;
+    width: 115px;
+    height: 40px;
+    border: 1px solid $button;
+    border-radius: 20px;
+}
+.button_add_order:hover{
+    background-color: $button;
+    color: white;
+    transition: All 0.5s ease;
+}
+//ломанная линия
+.Menu:after{
+    background: url(../image/tooth.png) 0 0 repeat-x;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 13px;
+    left: 0;
+    z-index: 2;
+    margin-top: -2px;
+}
