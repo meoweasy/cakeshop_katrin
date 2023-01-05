@@ -1,0 +1,27 @@
+//изменение шрифта с тягиванием экрана
+@function calcFluidFontSize($f-min, $f-max, $v-min, $v-max) {
+    $k: ($f-max - $f-min)/($v-max - $v-min);
+    $b: $f-min - $k * $v-min;
+  
+    $b: $b * 1px;
+  
+    @return calc( #{$k} * 100vw + #{$b} );
+}
+
+* {
+    box-sizing: border-box;
+  }
+
+//цвета
+$font: #9C0646;
+$button: #BF0A57;
+$wave: #FFECEF;
+
+//шрифты
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
+@font-face {
+    font-family: "Iskra";
+    src: url('../fonts/iskra_medium.otf');
+    src: local('../fonts/iskra_medium.otf');
+    src: url('../fonts/iskra_medium.otf') format('opentype'); }

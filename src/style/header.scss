@@ -1,0 +1,40 @@
+@import url(C:\Users\79084\Desktop\Katrin\cakeshop\src\style\font-awesome\font-awesome.scss);
+@import "./Main.scss";
+.MainHeader{
+    width: 100%;
+    height: 50px;
+    background-color: $wave;
+}
+.container{
+    width: 840px;
+    height: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 12px;
+    display: flex;
+}
+.phone, .time , .social_network{
+    color: $font;
+}
+.time{
+    margin-left: 34px;
+}
+.social_network{
+    margin-left: 211px;
+}
+.phone_desc, .time_desc{
+    display: inline-block;
+    font-family: Inter;
+    font-size: 16px;
+    margin-left: 13px;
+}
+.fa-odnoklassniki, .fa-instagram, .fa-telegram{
+    margin-left: 21px;
+}
+i{
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    color: $font;
+}
